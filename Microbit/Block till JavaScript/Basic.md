@@ -7,7 +7,7 @@ basic.showNumber(0);
 
 　
 
-### show number
+### show leds
 __`*`__ = På, __`.`__ = Av
 ```javascript
 basic.showLeds(`
