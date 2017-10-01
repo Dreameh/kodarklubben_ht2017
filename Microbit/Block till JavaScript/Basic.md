@@ -8,12 +8,12 @@ basic.showNumber(0);
 　
 
 ### show leds
-__`*`__ = På, __`.`__ = Av
+__`#`__ = På, __`.`__ = Av
 ```javascript
 basic.showLeds(`
     . . . . .
     . . . . .
-    . . * . .
+    . . # . .
     . . . . .
     . . . . .
 `);
