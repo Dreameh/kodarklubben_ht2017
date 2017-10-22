@@ -8,15 +8,15 @@ input.onButtonPressed(Button.A, () => {
   TotalaSpel += 1;
   basic.showLeds(`
     . # # . .
-    # . . # .
-    # # # # .
-    # . . # .
-    # . . # .
+    . . # . .
+    . . # . .
+    . . # . .
+    . # # # .
   `);
   basic.clearScreen();
 
   if(Spelare1 == 3) {
-    basic.showString("Spelare A vann!");
+    basic.showString("Spelare 1 vann!");
     Spelare1 = 0;
     Spelare2 = 0;
     TotalaSpel = 0;
@@ -27,16 +27,16 @@ input.onButtonPressed(Button.B, () => {
   Spelare2 += 1;
   TotalaSpel += 1;
   basic.showLeds(`
-    # # # . .
-    # . . # .
-    # # # . .
-    # . . # .
-    # # # . .
+    . # # # .
+    . . . # .
+    . # # # .
+    . # . . .
+    . # # # .
   `);
   basic.clearScreen();
 
   if(Spelare2 == 3) {
-    basic.showString("Spelare B vann!");
+    basic.showString("Spelare 2 vann!");
     Spelare1 = 0;
     Spelare2 = 0;
     TotalaSpel = 0;
@@ -47,11 +47,11 @@ input.onButtonPressed(Button.AB, () => {
   Oavgjord += 1;
   TotalaSpel += 1;
   basic.showLeds(`
-    # . . . #
+    . # # # .
     . # . # .
-    . . # . .
     . # . # .
-    # . . . #
+    . # . # .
+    . # # # .
   `);
   basic.clearScreen();
 });
