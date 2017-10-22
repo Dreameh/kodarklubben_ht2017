@@ -16,7 +16,7 @@ input.onButtonPressed(Button.A, () => {
   basic.clearScreen();
 
   if(Spelare1 == 3) {
-    basic.showString("Spelare 1 van!");
+    basic.showString("Spelare 1 vann!");
     Spelare1 = 0;
     Spelare2 = 0;
     TotalaSpel = 0;
@@ -36,7 +36,7 @@ input.onButtonPressed(Button.B, () => {
   basic.clearScreen();
 
   if(Spelare2 == 3) {
-    basic.showString("Spelare 2 van!");
+    basic.showString("Spelare 2 vann!");
     Spelare1 = 0;
     Spelare2 = 0;
     TotalaSpel = 0;
