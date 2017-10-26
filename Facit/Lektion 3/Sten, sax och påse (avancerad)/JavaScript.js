@@ -1,7 +1,6 @@
 let TotalaSpel = 0;
-let Oavgjord = 0;
-let Spelare2 = 0;
 let Spelare1 = 0;
+let Spelare2 = 0;
 
 input.onButtonPressed(Button.A, () => {
   Spelare1 += 1;
@@ -14,7 +13,7 @@ input.onButtonPressed(Button.A, () => {
     # . . # .
   `);
   basic.clearScreen();
-
+          
   if(Spelare1 == 3) {
     basic.showString("Spelare A vann!");
     Spelare1 = 0;
@@ -34,7 +33,7 @@ input.onButtonPressed(Button.B, () => {
     # # # . .
   `);
   basic.clearScreen();
-
+          
   if(Spelare2 == 3) {
     basic.showString("Spelare B vann!");
     Spelare1 = 0;
@@ -44,7 +43,6 @@ input.onButtonPressed(Button.B, () => {
 });
 
 input.onButtonPressed(Button.AB, () => {
-  Oavgjord += 1;
   TotalaSpel += 1;
   basic.showLeds(`
     # . . . #
@@ -56,6 +54,7 @@ input.onButtonPressed(Button.AB, () => {
   basic.clearScreen();
 });
 
+
 input.onGesture(Gesture.Shake, () => {
   basic.showString("Spel spelade: ");
   basic.showNumber(TotalaSpel);
@@ -63,7 +62,6 @@ input.onGesture(Gesture.Shake, () => {
   basic.clearScreen();
 });
 
+TotalaSpel = 0;
 Spelare1 = 0;
 Spelare2 = 0;
-Oavgjord = 0;
-TotalaSpel = 0;
